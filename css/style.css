@@ -8,9 +8,55 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 16px;
+    font-size: 14px;
+}
+
+/* Mobile first */
+/* Smartphone */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #0000ff;
+}
+
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 20px;
+}
+
+ul {
+    display: flex;
 }
 
 .bordure-rouge {
     border: solid 1px red;
 }
+
+/* Media queries (mobile first) */
+/* Tablette */
+@media screen and (min-width: 576px) {
+    header {
+        flex-direction: row;
+        background: yellow;
+    }
+}
+
+/* Ordinateur */
+@media screen and (min-width: 992px) {
+    header {
+        background: red;
+    }
+    body {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+}
+
